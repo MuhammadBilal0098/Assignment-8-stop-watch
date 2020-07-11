@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;1,100&display=swap" rel="stylesheet">
+    <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <title>stopWatch</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="StopWatch">
+        <div id="sw-time">
+            <h3 id="min">00</h3>:
+            <h3 id="sec">00</h3>:
+            <h3 id="msec">00</h3>
+        </div>
+
+        <div class="control">
+
+            <button id="sw-rst" onclick="pause()" >
+                <p>Pause</p>
+                <i class="fa fa-pause"></i>
+            </button>
+
+            <button id="sw-go" onclick="play()">
+                <p>Play</p>
+                <i class="fa fa-play"></i>
+            </button>
+
+            <button id="sw-pas" onclick="reset()" >
+                <p>Reset</p>
+                <i class="fa fa-repeat"></i>
+            </button>
+
+        </div>
+
+    </div>
+    
+</body>
+<script src="app.js"></script>
+</html>
